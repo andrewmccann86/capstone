@@ -8,9 +8,9 @@ from sqlalchemy.sql.expression import column, null
 
 # Setup Database connection
 
-database_name = "casting"
-database_path = "postgres://{}:{}@{}/{}".format('postgres', 'ph33rth33v1l', 'localhost:5432', database_name)
-
+#database_name = "casting"
+#database_path = "postgres://{}:{}@{}/{}".format('postgres', 'ph33rth33v1l', 'localhost:5432', database_name)
+database_path = os.environ['DATABASE_URL']
 db = SQLAlchemy()
 
 
